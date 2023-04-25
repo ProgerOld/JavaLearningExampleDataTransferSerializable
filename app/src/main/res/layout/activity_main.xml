@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Данные для передачи в другую активность"
+        android:textAllCaps="false"
+        android:textColor="#448AFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="#E1F5FE"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="14sp"
+        android:hint="Имя"
+        android:textColor="#448AFF"
+        android:textColorHint="#40C4FF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/addressIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="#E1F5FE"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="14sp"
+        android:hint="Адрес"
+        android:textColor="#448AFF"
+        android:textColorHint="#40C4FF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameIn"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/emailIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="#E1F5FE"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="14sp"
+        android:hint="Электронный адрес"
+        android:textColor="#448AFF"
+        android:textColorHint="#40C4FF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressIn"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#5C6BC0"
+        android:text="Передача данных"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
