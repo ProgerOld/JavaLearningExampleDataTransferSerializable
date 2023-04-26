@@ -41,6 +41,18 @@ public class SecondActivity extends AppCompatActivity {
                     + "Электронная почта: " + user.getEmail() + "\n");
         }
 
+        /*
+        //Простая передача данных
+        //Инициализация данных
+        name = bundleIntent.get("name").toString(); //Считывание и нинициализация имени
+        address = bundleIntent.get("address").toString(); //Считывание и нинициализация адреса
+        email = bundleIntent.get("email").toString(); //Считывание и нинициализация почты
+
+        //Вывод на экран данных из главной активности
+        dataMainActivity.setText("Имя: " + name + "\n"
+                + "Адрес: " + address + "\n"
+                + "Электронная почта: " + email + "\n");
+        */
 
         button.setOnClickListener(listener); //Обработка нажатия кнопки
 

@@ -52,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
             //Создание намерения переключения на другой экран
             Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
 
+            /*
+            //Запаковка данных в контейнер намерения
+            //Простая передача данных
+            intent.putExtra("name", name);
+            intent.putExtra("address", address);
+            intent.putExtra("email", email);
+            */
+
             //Запаковка данных в контейнер намерения
             intent.putExtra(User.class.getSimpleName(), user); //ser.class.getSimpleName() является ключом для запаковки в контейнер
 
