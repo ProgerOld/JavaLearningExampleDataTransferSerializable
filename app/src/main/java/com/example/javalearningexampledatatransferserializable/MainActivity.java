@@ -61,10 +61,9 @@ public class MainActivity extends AppCompatActivity {
             */
 
             //Запаковка данных в контейнер намерения
-            intent.putExtra(User.class.getSimpleName(), user); //ser.class.getSimpleName() является ключом для запаковки в контейнер
+            intent.putExtra(User.class.getSimpleName(), user); //User.class.getSimpleName() является ключом для запаковки в контейнер
 
-            //Старт переключения активности
-            startActivity(intent);
+            startActivity(intent);//Старт переключения активности
 
         }
     };
